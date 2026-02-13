@@ -5,7 +5,7 @@
 ![Glue](https://img.shields.io/badge/AWS_Glue-ETL-blue?style=for-the-badge)
 ![IAM](https://img.shields.io/badge/Security-IAM_Governance-red?style=for-the-badge)
 
-## 📋 Présentation du Projet
+##  Présentation du Projet
 Conception et déploiement d'une architecture **Data Lake complète sur AWS** pour une entreprise E-commerce.
 L'objectif était de centraliser les données transactionnelles (PostgreSQL) et de les préparer pour l'analyse, tout en respectant le principe de **moindre privilège**.
 
@@ -13,7 +13,7 @@ L'objectif était de centraliser les données transactionnelles (PostgreSQL) et 
 
 ---
 
-## 🏗️ Architecture Déployée
+##  Architecture Déployée
 
 ![Architecture Diagram](architecture_diagram.png)
 
@@ -25,14 +25,14 @@ Le pipeline de données suit les étapes suivantes :
 3.  **ETL & Catalogue :** Utilisation d'**AWS Glue** (Crawlers & Jobs) pour cataloguer les données et transformer les types (casting, nettoyage).
 4.  **Analyse :** Validation et exploration des données via **Amazon Athena** (SQL Serverless).
 
-### 🔎 Zoom sur le Pipeline ETL (AWS Glue Studio)
+###  Zoom sur le Pipeline ETL (AWS Glue Studio)
 J'ai conçu un workflow visuel pour joindre les tables `Ventes`, `Clients` et `Produits` et nettoyer les données avant l'export S3 :
 
 ![Glue Job Workflow](glue_job.png)
 
 ---
 
-## 🛡️ Sécurité & Gouvernance (IAM)
+##  Sécurité & Gouvernance (IAM)
 
 Point central du projet : la mise en place d'une politique de sécurité stricte (RBAC - Role Based Access Control).
 J'ai configuré **3 rôles IAM distincts** pour cloisonner les accès :
@@ -54,7 +54,7 @@ J'ai configuré **3 rôles IAM distincts** pour cloisonner les accès :
 
 ---
 
-## 📊 Validation Technique & Résultats
+##  Validation Technique & Résultats
 
 Le pipeline ETL est fonctionnel et les données sont prêtes à être consommées.
 Validation effectuée via des requêtes SQL complexes dans **Amazon Athena** :
