@@ -28,7 +28,7 @@ Le pipeline de données suit les étapes suivantes :
 ### 🔎 Zoom sur le Pipeline ETL (AWS Glue Studio)
 J'ai conçu un workflow visuel pour joindre les tables `Ventes`, `Clients` et `Produits` et nettoyer les données avant l'export S3 :
 
-![Glue Job Workflow](glue job.png)
+![Glue Job Workflow](glue_job.png)
 
 ---
 
