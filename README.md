@@ -72,7 +72,7 @@ JOIN "shopnow_db"."produits" p ON v.id_produit = p.id_produit
 GROUP BY p.categorie
 ORDER BY chiffre_affaires_total DESC;
 ```
-## 🛠️ Services AWS Maîtrisés
+## Services AWS Maîtrisés
 * Amazon S3 : Partitionnement et cycle de vie des données (Raw vs Analytics).
 * AWS Glue : Data Catalog, Crawlers et ETL Jobs (Visual).
 * Amazon Athena : Création de tables externes et requêtes SQL d'analyse.
